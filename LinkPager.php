@@ -10,6 +10,12 @@ class LinkPager extends \yii\widgets\LinkPager
     public $prevPageLabel = false;
     public $maxButtonCount = 10;
 
+    public function init()
+    {
+        ActiveAssets::register($this->getView());
+        parent::init();
+    }
+
     protected function renderPageButtons()
     {
         $pageCount = $this->pagination->getPageCount();
