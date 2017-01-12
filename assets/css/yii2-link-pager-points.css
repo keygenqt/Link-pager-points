@@ -2,17 +2,20 @@ ul.pagination li label {
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 6px 13px;
     text-decoration: none;
     position: relative;
-    top: 10px;
+    color: #FE7F00;
+    font-size: 18px;
+    top: 4px;
+    padding: 0;
 }
 ul.pagination {
     padding: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 5px;
+    position: relative;
 }
 ul.pagination li {
     display: inline-block;
@@ -22,7 +25,9 @@ ul.pagination li {
     border: none;
 }
 ul.pagination li.active a {
-    background: #4A4A4A;
+    color: #444;
+    background: #DDDDDD;
+    border-radius: 0;
 }
 ul.pagination li.active span {
     background: #4A4A4A;
@@ -31,9 +36,46 @@ ul.pagination li a, ul.pagination li span {
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 6px 13px;
     text-decoration: none;
-    color: white;
-    background: #77A841;
     border-radius: 4px;
+    color: #FE7F00;
+    font-size: 18px;
+    background: white;
+    padding: 5px 11px;
+}
+ul.pagination li.next {
+    position: absolute;
+    right: 0;
+    font-size: 0;
+}
+ul.pagination li.prev {
+    position: absolute;
+    left: 0;
+    font-size: 0;
+}
+ul.pagination li.next a, ul.pagination li.next span {
+    background: #FE7F00;
+    color: white;
+    border-radius: 0;
+    padding: 8px 20px;
+}
+ul.pagination li.prev a, ul.pagination li.next span {
+    background: #FE7F00;
+    color: white;
+    border-radius: 0;
+    padding: 8px 20px;
+}
+ul.pagination li.next label {
+    border-radius: 0;
+    padding: 8px 20px;
+    top: 0;
+    color: #444;
+    background: #DDDDDD;
+}
+ul.pagination li.prev label {
+    border-radius: 0;
+    padding: 8px 20px;
+    top: 0;
+    color: #444;
+    background: #DDDDDD;
 }
